@@ -14,15 +14,41 @@
                     <ul>
                         <li><a href="vitrine-accueil.html">Accueil</a></li>
                         <li><a href="vitrine-programme.html">Programme</a></li>
-                        <li><a href="vitrine-contacts.html">Contacts</a></li>
+                        <li class="en-cours"><a href="vitrine-contacts.html">Contacts</a></li>
                     </ul>
                 </nav>
         </header>
         <main>
-            <p>zoufh</p>
+            <h2>Contact</h2>
+            <div class="formulaire">
+                    <form action="action_page.php">
+                  
+                      <label for="fname">Prénom</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Votre prénom">
+                  
+                      <label for="lname">Nom</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Votre nom">
+                  
+                      <label for="country">Pays</label>
+                      <select id="country" name="country">
+                        <option value="France">France</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Usa">USA</option>
+                      </select>
+                  
+                      <label for="subject">Sujet</label>
+                      <textarea id="subject" name="subject" placeholder="Ecrire quelque chose..." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="envoyer">
+                  
+                    </form>
+                  </div>
+            </div>
         </main>
         <footer>
-
+            <a href="http://www.epitech.eu">
+                <img class="image" src="style/logo_epitech.png" alt="image logo epitech">
+                </a>
         </footer>
     </body>
 </html>
