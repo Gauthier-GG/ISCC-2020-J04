@@ -155,10 +155,11 @@ th {
     color: #F2F2F2;
 }
 
-input[type=text], select, textarea {
-    width: 100%; 
+
+input[type=text], textarea {
+    width: 250px; 
     padding: 12px; 
-    border: 2px dotted #17C1FF; 
+    border: 2px solid #e6e6e6; 
     border-radius: 4px; 
     box-sizing: border-box; 
     margin-top: 6px; 
@@ -166,8 +167,26 @@ input[type=text], select, textarea {
     resize: vertical 
   }
 
+input[type=text], textarea {
+    font-family: 'opensans';
+}
+
+
+input[type=text] {
+    height: 30px;
+}
+
+input[type=text]:hover {
+    border: blue 2px dashed;
+}
+
+textarea:hover {
+    border: blue 2px dashed;
+}
+
+
   input[type=submit] {
-    background-color: #17C1FF;
+    background-color: #817e7e;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -176,12 +195,18 @@ input[type=text], select, textarea {
   }
 
   input[type=submit]:hover {
-    background-color: #21a9e9;
+    background-color: #17C1FF;
+  }
+
+  input[type=submit]:active {
+    box-shadow: -1px 2px 12px 5px rgb(85, 83, 83) inset;
   }
 
   .formulaire {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
-    border: #17C1FF solid 2px;
+    margin: auto;
+    padding: 0 10%;
+    border: #17C1FF 1.5mm ridge;
+    max-width: 300px;
   }
